@@ -1,45 +1,32 @@
-# Personal Workspace Blueprint
+# Watfa — Personal Workspace
 
-A simple, reusable structure for keeping track of tools, projects, notes, and useful resources. Add information as you go; you do not need to fill every section in advance.
+Watfa is a lightweight, responsive workspace for organizing tools, notes, projects, resources, and ideas. The website lives in [`index.html`](./index.html) and requires no build tools or dependencies.
 
-## Folder structure
+## Open the website
 
-```text
-watfa-structure-/
-├── README.md
-├── tools/
-│   ├── README.md
-│   └── tool-template.md
-├── notes/
-│   ├── README.md
-│   └── note-template.md
-├── projects/
-│   ├── README.md
-│   └── project-template.md
-├── resources/
-│   └── README.md
-└── ideas/
-    └── README.md
-```
+- **Repository:** https://github.com/yazoniplay/watfa-structure-
+- **Website file:** https://github.com/yazoniplay/watfa-structure-/blob/main/index.html
 
-## Where things go
+### Publish with GitHub Pages
 
-- **Tools** — apps, websites, services, libraries, and utilities you use.
-- **Notes** — quick thoughts, instructions, commands, and things to remember.
-- **Projects** — goals, progress, tasks, and which tools each project uses.
-- **Resources** — documentation, tutorials, guides, and useful links.
-- **Ideas** — things to try or research later.
+1. Open this repository's **Settings → Pages**.
+2. Under **Build and deployment**, select **Deploy from a branch**.
+3. Choose branch **main** and folder **/(root)**, then save.
+4. After GitHub finishes publishing, open the website URL shown in the Pages settings. It will usually be `https://yazoniplay.github.io/watfa-structure-/`.
 
-## How to use it
+## Features
 
-1. Open the relevant folder.
-2. Copy its template when creating a new entry.
-3. Give the file a clear, searchable name, such as `vscode.md` or `website-redesign.md`.
-4. Add links between related tools, projects, and notes.
-5. Keep secrets out of this repository. Never save passwords, API keys, access tokens, or private credentials here.
+- Dashboard with entry counts and recent activity.
+- Separate views for tools, notes, projects, resources, and ideas.
+- Add, edit, delete, and search entries.
+- Tool details include category, website, pricing, and description.
+- Light and dark themes; responsive layout for phones and desktops.
+- No external libraries, backend, or build process required.
 
-## Quick start
+## Important data note
 
-Start by adding just the tools you use most often and a single notes file. Expand the structure only when you need it.
+Entries are stored in the browser's `localStorage` on the device where they are added. They are **not automatically synced** across devices or users, and clearing browser site data can remove them. This version has no account system or cloud database. Do not store passwords, API keys, access tokens, or other secrets in it.
 
-This repository is a starter blueprint, not an application. It works with GitHub's file editor, VS Code, Obsidian, or any Markdown editor.
+## Optional Markdown blueprint
+
+The `tools/`, `notes/`, `projects/`, `resources/`, and `ideas/` folders also contain reusable Markdown templates for keeping records in files instead of the browser.
